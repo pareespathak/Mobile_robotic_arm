@@ -1,16 +1,16 @@
-
 // base values 10-160  thumb = 90
 // grab values 165-255 thumb = 160
 // pins 5,6  motor1
 // pins 9,10 motor2
 // pins 7,8  lift
-// pins 3    grab
+// pins 2,3  grab
 // pins 4    base
 
 #include <Servo.h>
 
 Servo base;
 Servo grab;
+Servo grab2;
 int m1=5,m2=6,m3=9,m4=10,l1=7,l2=8;
 long unsigned int x=0;
 unsigned long int b=0,g=0;
@@ -26,6 +26,7 @@ void setup() {
   pinMode(l2,OUTPUT);
   base.attach(4);
   grab.attach(3);
+  grab2.attach(2);
   
 }
 void loop() {
@@ -82,6 +83,7 @@ void loop() {
  {
    g = map(x,165,255,0,90);
    grab.write(g);
+   grab2.write(g);
    delay(2);   
  }
  
@@ -96,7 +98,7 @@ void movestop()
 //==============================forward=====================
 void moveforward()
 { 
-  delay(200);
+  delay(100);
   digitalWrite(m1,LOW);
   digitalWrite(m2,HIGH);
   digitalWrite(m3,LOW);
@@ -106,7 +108,7 @@ void moveforward()
 //===============================reverse=====================
   void movereverse()
 {
-  delay(200);
+  delay(100);
   digitalWrite(m2,LOW);
   digitalWrite(m1,HIGH);
   digitalWrite(m4,LOW);
@@ -116,7 +118,7 @@ void moveforward()
 //==================================right===============
 void moveright()
 {
-  delay(200);
+  delay(100);
   digitalWrite(m1,LOW);
   digitalWrite(m2,HIGH);
   digitalWrite(m4,LOW);
@@ -125,7 +127,7 @@ void moveright()
 //===================================left===============
 void moveleft()
 { 
-  delay(200);
+  delay(100);
    digitalWrite(m2,LOW);
   digitalWrite(m1,HIGH);
   digitalWrite(m3,LOW);
