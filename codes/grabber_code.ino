@@ -153,8 +153,8 @@ void lift()
 void liftdown()
 {
   delay(50);
-  digitalWrite(l1,HIGH);
   digitalWrite(l2,LOW);
+  digitalWrite(l1,HIGH);
  
 }
 
