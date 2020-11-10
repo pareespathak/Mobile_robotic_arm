@@ -81,8 +81,13 @@ the orientation of the bot. As a result, the controller can grab and release the
 the required position quickly and accurately without dragging the object.  
 ● This feature is especially helpful in regions of difficult terrain as a minimum movement of
 a bot is sufficient. 
-## bot overview
+## Bot overview
 <img src="pictures/20201110_104553.jpg" width="400"> | <img src="pictures/20201110_104630.jpg" height="300">
 <img src="pictures/20201110_104813.jpg" height="300"> 
-## components required : 
+## Components Required : 
 Ic-L293d, L298n motordriver, Arduino uno, hc-5 bluetooth module, Bo motors 300rmp x40 Bo motor 150rpm, servo sg90 x2, servo v3003, jumpwires, batteries and wheels.
+## Team Members : 
+Parees Pathak  
+Ojas Dighe  
+Parth Dhorajiya  
+Smit Savaliya  
