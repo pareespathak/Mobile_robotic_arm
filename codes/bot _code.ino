@@ -18,6 +18,7 @@ unsigned long int b=0,g=0;
 void setup() {
   
   Serial.begin(9600);
+  delay(50);
   pinMode(m1,OUTPUT);
   pinMode(m2,OUTPUT);
   pinMode(m3,OUTPUT);
@@ -27,7 +28,7 @@ void setup() {
   base.attach(4);
   grab.attach(3);
   grab2.attach(2);
-  
+  delay(200);
 }
 void loop() {
   while (Serial.available()>0)
@@ -74,17 +75,17 @@ void loop() {
   liftdown();
   Serial.println("lifting down");
  }
- if(x >= 10 && x <= 160)
+ while(x >= 10 && x <= 160)
  {
    base.write(x);
-   delay(2);
+   break;
  }
- if(x >= 165 && x <= 255)
+ while(x >= 165 && x <= 255)
  {
    g = map(x,165,255,0,90);
    grab.write(g);
    grab2.write(g);
-   delay(2);   
+   break;
  }
  
 }
@@ -128,7 +129,7 @@ void moveright()
 void moveleft()
 { 
   delay(100);
-   digitalWrite(m2,LOW);
+  digitalWrite(m2,LOW);
   digitalWrite(m1,HIGH);
   digitalWrite(m3,LOW);
   digitalWrite(m4,HIGH);
@@ -137,17 +138,16 @@ void moveleft()
 //=====================================liftstop=============
 void stoplift()
 {
- delay(50);
+ delay(20);
  digitalWrite(l1,LOW);
  digitalWrite(l2,LOW);
 }
 //=====================================lift====================
 void lift()
 {
-  delay(50);
+  delay(20);
   digitalWrite(l1,LOW);
   digitalWrite(l2,HIGH);
-  
 }
 //=====================================liftdown================
 void liftdown()
@@ -155,7 +155,6 @@ void liftdown()
   delay(50);
   digitalWrite(l2,LOW);
   digitalWrite(l1,HIGH);
- 
 }
 
 
