@@ -82,9 +82,11 @@ void loop() {
  }
  while(x >= 165 && x <= 255)
  {
-   g = map(x,165,255,0,90);
+   g = map(x,165,255,90,180);
    grab.write(g);
-   grab2.write(g);
+   int q = 0;
+   q = 180-g;
+   grab2.write(q);
    break;
  }
  
