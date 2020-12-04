@@ -83,11 +83,11 @@ the required position quickly and accurately without dragging the object.
 a bot is sufficient. 
 ## Bot overview
 <img src="pictures/20201127_192603.jpg" width="400"> | <img src="pictures/20201127_193043.jpg" height="300">
-<img src="pictures/20201127_192830.jpg" height="300"> 
+<img src="pictures/20201127_192830.jpg" height="300"> | <img src="pictures/20201127_192514.jpg" height="300"> | <img src="pictures/20201127_192214.jpg" height="300">
 ## Components Required : 
 Ic-L293d, L298n motordriver, Arduino uno, hc-5 bluetooth module, Bo motors 300rmp x40 Bo motor 150rpm, servo sg90 x2, servo v3003, jumpwires, batteries and wheels.
 ## Team Members : 
-Parees Pathak  
-Ojas Dighe  
-Parth Dhorajiya  
-Smit Savaliya  
+### Parees Pathak  
+### Ojas Dighe  
+### Parth Dhorajiya  
+### Smit Savaliya  
