@@ -5,7 +5,7 @@ The project is aimed to design a manually controlled wireless bot that can perfo
 of grabbing the objects and dropping them to target zones. The bot is designed to
 overcome various types of hurdles in the arena while performing tasks. The bot can be
 operated from a 10m range using an android mobile application. The bot incorporates
-with a remote-controlled car with a grabbing system, lifting arms, revolving base
+a remote-controlled car with a grabbing system, lifting arms, revolving base
 provided with an onboard electrical power supply. 
 
 <img src="pictures/architecture%20image.png">
@@ -35,16 +35,16 @@ The digital signals from the Arduino are received by Four Input pins of the moto
 changes the direction of rotation of the two motors which are used for controlling the motion of
 the bot.  
 》Two motors are connected at each output socket of the motor driver used for controlling the
-motion of the bot. 
+The motion of the bot. 
 
 ## GRABBING MECHANISM
 ### The grabbing mechanism in this bot incorporates a rotating base, lifting arms, and grabber. 
 ### 1. ROTATING BASE:
 Utility
-A rotating base allows the grabber to access different locations precisely without changing the position of the bot. This reduces constraints from the bot and makes the controlling task easierfor the user. 
+A rotating base allows the grabber to access different locations precisely without changing the position of the bot. This reduces constraints from the bot and makes the controlling task easier for the user. 
 
 #### Mechanical Design 
-Servo V3003 is used as the rotating base, Horn of the motor is mounted over the chassis and the base is attached to the lifting arm. The angle of rotation for the motor is controlled by setting the slider position to the required value. 
+Servo V3003 is used as the rotating base, the Horn of the motor is mounted over the chassis and the base is attached to the lifting arm. The angle of rotation for the motor is controlled by setting the slider position to the required value. 
 ### 2. LIFTING ARMS: 
 
 #### Utility 
@@ -68,7 +68,7 @@ suitable angle inwards after an appropriate length to ensure a better grip on th
 》Foams and Pads are attached at the end of each grabber to provide a proper surface for
 grabbing.  
 》The shape and size of grabbers (involving length of each grabber before the bend, after the
-bend and angle of bend) have been chosen such that it works best for objects of size range
+bend and angle of bend) have been chosen such that it works best for objects of the size range
 4-13cm keeping in mind the sizes and shapes of objects in the arena.  
 》Servo motors are attached for the precise motion of these grabbers, one for each grabber,
 and their angular motion is controlled by setting the slider to the required position. 
@@ -87,7 +87,7 @@ a bot is sufficient.
 ## Components Required : 
 Ic-L293d, L298n motordriver, Arduino uno, hc-5 bluetooth module, Bo motors 300rmp x40 Bo motor 150rpm, servo sg90 x2, servo v3003, jumpwires, batteries and wheels.
 ## Team Members : 
-### Parees Pathak  
-### Ojas Dighe  
-### Parth Dhorajiya  
+### Parees Pathak
+### Ojas Dighe
+### Parth Dhorajiya
 ### Smit Savaliya  
