@@ -87,7 +87,7 @@ a bot is sufficient.
 ## Components Required : 
 Ic-L293d, L298n motordriver, Arduino uno, hc-5 bluetooth module, Bo motors 300rmp x40 Bo motor 150rpm, servo sg90 x2, servo v3003, jumpwires, batteries and wheels.
 ## Team Members : 
-### Parees Pathak
+### Pareese Pathak
 ### Ojas Dighe
 ### Parth Dhorajiya
 ### Smit Savaliya  
